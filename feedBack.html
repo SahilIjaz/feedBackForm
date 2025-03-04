@@ -9,22 +9,31 @@
 <body>
     <div class="main">
         <h3>Feedback form</h3>
-        <form position='center'>
+        <form>
 <h4>Enter your name:</h4>
 <input type="text" placeholder="Enter name"/>
 <h4>Provide your Email address:</h4>
 <input type='email' placeholder="Email"/>
 <h4>Ratings</h4>
 <div id='rating'>
-    <input type='radio' value='1' name="1">1
-    <input type='radio' value='2' name='2'>2
-    <input type='radio' value='3' name="'3">3
-    <input type='radio' value='4' name='4'>4
-    <input type='radio' value='5' name='5'>5
+    <input type='radio' value='1' name="rad">1
+    <input type='radio' value='2' name='rad'>2
+    <input type='radio' value='3' name="rad">3
+    <input type='radio' value='4' name='rad'>4
+    <input type='radio' value='5' name='rad'>5
 </div>
 
-<textarea>
-</textarea>
+<textarea name="feedback" placeholder="Write your feedback here..." rows="4"></textarea>
+
+<h4>Feedback Type:</h4>
+<select name="feedbackType">
+    <option value="general">General Feedback</option>
+    <option value="bug">Bug Report</option>
+    <option value="suggestion">Suggestion</option>
+</select>
+
+<h6><input type="checkbox">Yes! keep me updated.</h6>
+<button type="submit">Submit</button>
             </form>
     </div>
 </body>
